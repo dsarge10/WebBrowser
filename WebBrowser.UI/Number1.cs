@@ -24,7 +24,7 @@ namespace WebBrowser.UI
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("Dylan Sargent, dds0037, This is my first Web Application.");
         }
     }
 }
