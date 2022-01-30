@@ -45,9 +45,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebBrowser.UI\WebBrowser.UI.csproj">
-      <Project>{4aa8e066-9f01-4337-b5d9-f40a18c316ef}</Project>
-      <Name>WebBrowser.UI</Name>
+    <ProjectReference Include="..\WebBrowser.Data\WebBrowser.Data.csproj">
+      <Project>{bdfcd45e-2087-4cd6-8118-df51cb0ff6f7}</Project>
+      <Name>WebBrowser.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

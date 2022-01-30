@@ -46,25 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuStripForm1.cs">
+    <Compile Include="Number1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuStripForm1.Designer.cs">
-      <DependentUpon>MenuStripForm1.cs</DependentUpon>
+    <Compile Include="Number1.Designer.cs">
+      <DependentUpon>Number1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MenuStripForm1.resx">
-      <DependentUpon>MenuStripForm1.cs</DependentUpon>
+    <EmbeddedResource Include="Number1.resx">
+      <DependentUpon>Number1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -75,13 +81,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arrow-right.png" />
+    <ProjectReference Include="..\WebBrowser.Logic\WebBrowser.Logic.csproj">
+      <Project>{7eff3afd-440a-42bc-b633-dbe85a9ebf13}</Project>
+      <Name>WebBrowser.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\arrow-left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\refresh %283%29.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

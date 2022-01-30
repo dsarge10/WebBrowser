@@ -44,11 +44,5 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WebBrowser.Logic\WebBrowser.Logic.csproj">
-      <Project>{7eff3afd-440a-42bc-b633-dbe85a9ebf13}</Project>
-      <Name>WebBrowser.Logic</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

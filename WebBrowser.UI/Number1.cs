@@ -10,26 +10,21 @@ using System.Windows.Forms;
 
 namespace WebBrowser.UI
 {
-    public partial class MenuStripForm1 : Form
+    public partial class Number1 : Form
     {
-        public MenuStripForm1()
+        public Number1()
         {
             InitializeComponent();
         }
 
-        private void MenuStripForm1_Load(object sender, EventArgs e)
+        private void exitWebBrowserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
