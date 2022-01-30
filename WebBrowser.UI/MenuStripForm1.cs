@@ -17,6 +17,19 @@ namespace WebBrowser.UI
             InitializeComponent();
         }
 
-       
+        private void MenuStripForm1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
