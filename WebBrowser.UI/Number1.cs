@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WebBrowser.UI
 {
     public partial class Number1 : Form
@@ -26,5 +27,25 @@ namespace WebBrowser.UI
         {
             MessageBox.Show("Dylan Sargent, dds0037, This is my first Web Application.");
         }
+
+        private void keyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                webBrowser1.Navigate(textBoxAddress.Text);
+            }
+        }
+
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonGo_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(textBoxAddress.Text);  
+        }
+
+        
     }
 }
