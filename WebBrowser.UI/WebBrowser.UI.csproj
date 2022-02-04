@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorChange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ColorChange.Designer.cs">
+      <DependentUpon>ColorChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Number1.cs">
       <SubType>Form</SubType>
     </Compile>
