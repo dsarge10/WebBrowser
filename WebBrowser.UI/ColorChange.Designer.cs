@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.tbBlue = new System.Windows.Forms.TrackBar();
+            this.pnlColor = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.tbBlue)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,15 +52,25 @@
             this.tbBlue.Size = new System.Drawing.Size(292, 45);
             this.tbBlue.TabIndex = 1;
             this.tbBlue.TickFrequency = 5;
+            this.tbBlue.Scroll += new System.EventHandler(this.tbBlue_Scroll);
+            // 
+            // pnlColor
+            // 
+            this.pnlColor.Location = new System.Drawing.Point(9, 98);
+            this.pnlColor.Name = "pnlColor";
+            this.pnlColor.Size = new System.Drawing.Size(286, 100);
+            this.pnlColor.TabIndex = 2;
             // 
             // ColorChange
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pnlColor);
             this.Controls.Add(this.tbBlue);
             this.Controls.Add(this.label1);
             this.Name = "ColorChange";
-            this.Size = new System.Drawing.Size(298, 274);
+            this.Size = new System.Drawing.Size(305, 214);
+            this.Load += new System.EventHandler(this.ColorChange_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbBlue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -70,5 +81,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar tbBlue;
+        private System.Windows.Forms.Panel pnlColor;
     }
 }

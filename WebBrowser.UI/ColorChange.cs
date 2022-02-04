@@ -16,5 +16,24 @@ namespace WebBrowser.UI
         {
             InitializeComponent();
         }
+
+        private void tbBlue_Scroll(object sender, EventArgs e)
+        {
+            int blueValue = tbBlue.Value;
+
+            try
+            {
+                pnlColor.BackColor = Color.FromArgb(blueValue);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void ColorChange_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
