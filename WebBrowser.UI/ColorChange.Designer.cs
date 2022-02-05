@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColorChange));
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.tsBack = new System.Windows.Forms.ToolStripButton();
+            this.tsForward = new System.Windows.Forms.ToolStripButton();
+            this.tsRefresh = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.textBoxAddress = new System.Windows.Forms.ToolStripTextBox();
             this.buttonGo = new System.Windows.Forms.ToolStripButton();
@@ -54,9 +54,9 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3,
+            this.tsBack,
+            this.tsForward,
+            this.tsRefresh,
             this.toolStripButton4,
             this.textBoxAddress,
             this.buttonGo,
@@ -67,32 +67,35 @@
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // tsBack
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.tsBack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsBack.Image = ((System.Drawing.Image)(resources.GetObject("tsBack.Image")));
+            this.tsBack.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBack.Name = "tsBack";
+            this.tsBack.Size = new System.Drawing.Size(23, 22);
+            this.tsBack.Text = "Back";
+            this.tsBack.Click += new System.EventHandler(this.tsBack_Click);
             // 
-            // toolStripButton2
+            // tsForward
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.tsForward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsForward.Image = ((System.Drawing.Image)(resources.GetObject("tsForward.Image")));
+            this.tsForward.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsForward.Name = "tsForward";
+            this.tsForward.Size = new System.Drawing.Size(23, 22);
+            this.tsForward.Text = "Forward";
+            this.tsForward.Click += new System.EventHandler(this.tsForward_Click);
             // 
-            // toolStripButton3
+            // tsRefresh
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.tsRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsRefresh.Image = ((System.Drawing.Image)(resources.GetObject("tsRefresh.Image")));
+            this.tsRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsRefresh.Name = "tsRefresh";
+            this.tsRefresh.Size = new System.Drawing.Size(23, 22);
+            this.tsRefresh.Text = "Refresh";
+            this.tsRefresh.Click += new System.EventHandler(this.tsRefresh_Click);
             // 
             // toolStripButton4
             // 
@@ -149,9 +152,9 @@
 
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton tsBack;
+        private System.Windows.Forms.ToolStripButton tsForward;
+        private System.Windows.Forms.ToolStripButton tsRefresh;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripTextBox textBoxAddress;
         private System.Windows.Forms.ToolStripButton buttonGo;

@@ -46,5 +46,26 @@ namespace WebBrowser.UI
         {
 
         }
+
+        private void tsRefresh_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Refresh();
+        }
+
+        private void tsForward_Click(object sender, EventArgs e)
+        {
+            if (webBrowser1.CanGoForward)
+            {
+                webBrowser1.GoForward();
+            }
+        }
+
+        private void tsBack_Click(object sender, EventArgs e)
+        {
+            if (webBrowser1.CanGoBack)
+            {
+                webBrowser1.GoBack();
+            }
+        }
     }
 }
