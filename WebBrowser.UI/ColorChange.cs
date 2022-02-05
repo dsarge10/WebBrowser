@@ -19,11 +19,13 @@ namespace WebBrowser.UI
 
         private void tbBlue_Scroll(object sender, EventArgs e)
         {
-            int blueValue = tbBlue.Value;
+            int redValue = tbRed.Value;
+            int greenValue = tbGreen.Value;
+            int blueValue = tbBlue.Value;   
 
             try
             {
-                pnlColor.BackColor = Color.FromArgb(blueValue);
+                pnlColor.BackColor = Color.FromArgb(redValue, greenValue, blueValue);
             }
             catch (Exception ex)
             {
