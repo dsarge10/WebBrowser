@@ -28,102 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbRed = new System.Windows.Forms.TrackBar();
-            this.pnlColor = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbGreen = new System.Windows.Forms.TrackBar();
-            this.tbBlue = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.tbRed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbGreen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbBlue)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColorChange));
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.textBoxAddress = new System.Windows.Forms.ToolStripTextBox();
+            this.buttonGo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // webBrowser1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Red";
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(829, 581);
+            this.webBrowser1.TabIndex = 1;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
-            // tbRed
+            // toolStrip1
             // 
-            this.tbRed.Location = new System.Drawing.Point(3, 47);
-            this.tbRed.Maximum = 255;
-            this.tbRed.Name = "tbRed";
-            this.tbRed.Size = new System.Drawing.Size(167, 45);
-            this.tbRed.TabIndex = 1;
-            this.tbRed.TickFrequency = 5;
-            this.tbRed.Scroll += new System.EventHandler(this.tbBlue_Scroll);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3,
+            this.toolStripButton4,
+            this.textBoxAddress,
+            this.buttonGo,
+            this.toolStripButton5});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(829, 25);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // pnlColor
+            // toolStripButton1
             // 
-            this.pnlColor.Location = new System.Drawing.Point(3, 98);
-            this.pnlColor.Name = "pnlColor";
-            this.pnlColor.Size = new System.Drawing.Size(559, 23);
-            this.pnlColor.TabIndex = 2;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
             // 
-            // label2
+            // toolStripButton2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(246, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 31);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Green";
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "toolStripButton2";
             // 
-            // label3
+            // toolStripButton3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(445, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 31);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Blue";
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "toolStripButton3";
             // 
-            // tbGreen
+            // toolStripButton4
             // 
-            this.tbGreen.Location = new System.Drawing.Point(199, 47);
-            this.tbGreen.Maximum = 255;
-            this.tbGreen.Name = "tbGreen";
-            this.tbGreen.Size = new System.Drawing.Size(167, 45);
-            this.tbGreen.TabIndex = 5;
-            this.tbGreen.TickFrequency = 5;
-            this.tbGreen.Scroll += new System.EventHandler(this.tbBlue_Scroll);
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Text = "toolStripButton4";
             // 
-            // tbBlue
+            // textBoxAddress
             // 
-            this.tbBlue.Location = new System.Drawing.Point(395, 47);
-            this.tbBlue.Maximum = 255;
-            this.tbBlue.Name = "tbBlue";
-            this.tbBlue.Size = new System.Drawing.Size(167, 45);
-            this.tbBlue.TabIndex = 6;
-            this.tbBlue.TickFrequency = 5;
-            this.tbBlue.Scroll += new System.EventHandler(this.tbBlue_Scroll);
+            this.textBoxAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(565, 25);
+            this.textBoxAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown);
+            // 
+            // buttonGo
+            // 
+            this.buttonGo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.buttonGo.Image = ((System.Drawing.Image)(resources.GetObject("buttonGo.Image")));
+            this.buttonGo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.buttonGo.Name = "buttonGo";
+            this.buttonGo.Size = new System.Drawing.Size(23, 22);
+            this.buttonGo.Text = "toolStripButton5";
+            this.buttonGo.Click += new System.EventHandler(this.buttonGo_Click);
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton5.Text = "toolStripButton5";
             // 
             // ColorChange
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tbBlue);
-            this.Controls.Add(this.tbGreen);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pnlColor);
-            this.Controls.Add(this.tbRed);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.webBrowser1);
             this.Name = "ColorChange";
-            this.Size = new System.Drawing.Size(587, 214);
+            this.Size = new System.Drawing.Size(829, 581);
             this.Load += new System.EventHandler(this.ColorChange_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tbRed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbGreen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbBlue)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,12 +147,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TrackBar tbRed;
-        private System.Windows.Forms.Panel pnlColor;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TrackBar tbGreen;
-        private System.Windows.Forms.TrackBar tbBlue;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripTextBox textBoxAddress;
+        private System.Windows.Forms.ToolStripButton buttonGo;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
     }
 }

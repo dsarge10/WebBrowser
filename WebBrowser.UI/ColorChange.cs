@@ -17,23 +17,32 @@ namespace WebBrowser.UI
             InitializeComponent();
         }
 
-        private void tbBlue_Scroll(object sender, EventArgs e)
-        {
-            int redValue = tbRed.Value;
-            int greenValue = tbGreen.Value;
-            int blueValue = tbBlue.Value;   
+        
 
-            try
+        private void ColorChange_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void keyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
             {
-                pnlColor.BackColor = Color.FromArgb(redValue, greenValue, blueValue);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
+                webBrowser1.Navigate(textBoxAddress.Text);
             }
         }
 
-        private void ColorChange_Load(object sender, EventArgs e)
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonGo_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(textBoxAddress.Text);
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
         }

@@ -30,10 +30,10 @@ namespace WebBrowser.UI
 
         private void keyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                webBrowser1.Navigate(textBoxAddress.Text);
-            }
+        //    if (e.KeyCode == Keys.Enter)
+        //    {
+        //        webBrowser1.Navigate(textBoxAddress.Text);
+        //    }
         }
 
         private void toolStripTextBox1_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace WebBrowser.UI
 
         private void buttonGo_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate(textBoxAddress.Text);  
+            //webBrowser1.Navigate(textBoxAddress.Text);  
         }
 
         
