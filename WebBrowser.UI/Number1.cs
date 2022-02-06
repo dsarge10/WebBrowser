@@ -28,24 +28,42 @@ namespace WebBrowser.UI
             MessageBox.Show("Dylan Sargent, dds0037, This is my first Web Application.");
         }
 
-        private void keyDown(object sender, KeyEventArgs e)
+        private void Number1_KeyDown_1(object sender, KeyEventArgs e)
         {
-        //    if (e.KeyCode == Keys.Enter)
-        //    {
-        //        webBrowser1.Navigate(textBoxAddress.Text);
-        //    }
+            if (e.Control && (e.KeyCode == Keys.T))
+                this.tabControl1.TabPages.Add(new TabPage("New Tab"));
+            if (e.Control && (e.KeyCode == Keys.W))
+                this.tabControl1.TabPages.RemoveAt(this.tabControl1.SelectedIndex);
         }
 
-        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        private void newTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void buttonGo_Click(object sender, EventArgs e)
+        private void menuStrip1_Click(object sender, EventArgs e)
         {
-            //webBrowser1.Navigate(textBoxAddress.Text);  
+
         }
 
-        
+        //private void keyDown(object sender, KeyEventArgs e)
+        //{
+        ////    if (e.KeyCode == Keys.Enter)
+        ////    {
+        ////        webBrowser1.Navigate(textBoxAddress.Text);
+        ////    }
+        //}
+
+        //private void toolStripTextBox1_Click(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void buttonGo_Click(object sender, EventArgs e)
+        //{
+        //    //webBrowser1.Navigate(textBoxAddress.Text);  
+        //}
+
+
     }
 }
