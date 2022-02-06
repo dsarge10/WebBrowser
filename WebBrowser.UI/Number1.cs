@@ -32,6 +32,11 @@ namespace WebBrowser.UI
         {
             if (e.Control && (e.KeyCode == Keys.T))
                 this.tabControl1.TabPages.Add(new TabPage("New Tab"));
+                this.Dock = DockStyle.Fill;
+                this.Controls.Add(this.tabControl1);
+                
+                
+
             if (e.Control && (e.KeyCode == Keys.W))
                 this.tabControl1.TabPages.RemoveAt(this.tabControl1.SelectedIndex);
         }
@@ -39,6 +44,8 @@ namespace WebBrowser.UI
         private void newTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TabPage myTabPages = new TabPage("New Tab");
+            myTabPages.Dock = DockStyle.Fill;
+            myTabPages.Controls.Add(colorChange4);
             tabControl1.TabPages.Add(myTabPages);
         }
 
@@ -51,6 +58,17 @@ namespace WebBrowser.UI
         {
             tabControl1.TabPages.Remove(tabControl1.SelectedTab);
         }
+
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+            //Number1 myUserControl = new Number1();
+            //myUserControl.Dock = DockStyle.Fill;
+            //TabPage myTabPage = new TabPage();//Create new tabpage
+            //myTabPage.Controls.Add(myUserControl);
+            //tabControl1.TabPages.Add(myTabPage);
+        }
+
+
 
         //private void keyDown(object sender, KeyEventArgs e)
         //{
