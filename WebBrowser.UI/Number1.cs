@@ -38,12 +38,18 @@ namespace WebBrowser.UI
 
         private void newTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            TabPage myTabPages = new TabPage("New Tab");
+            tabControl1.TabPages.Add(myTabPages);
         }
 
         private void menuStrip1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl1.TabPages.Remove(tabControl1.SelectedTab);
         }
 
         //private void keyDown(object sender, KeyEventArgs e)

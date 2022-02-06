@@ -43,6 +43,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.colorChange1 = new WebBrowser.UI.ColorChange();
+            this.colorChange2 = new WebBrowser.UI.ColorChange();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -87,23 +88,24 @@
             this.closeCurrentTabToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
             this.closeCurrentTabToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.closeCurrentTabToolStripMenuItem.Text = "Close Current Tab";
+            this.closeCurrentTabToolStripMenuItem.Click += new System.EventHandler(this.closeCurrentTabToolStripMenuItem_Click);
             // 
             // savePageAsHTMLToolStripMenuItem
             // 
             this.savePageAsHTMLToolStripMenuItem.Name = "savePageAsHTMLToolStripMenuItem";
-            this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.savePageAsHTMLToolStripMenuItem.Text = "Save Page As HTML";
             // 
             // printPageToolStripMenuItem
             // 
             this.printPageToolStripMenuItem.Name = "printPageToolStripMenuItem";
-            this.printPageToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.printPageToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.printPageToolStripMenuItem.Text = "Print Page";
             // 
             // exitWebBrowserToolStripMenuItem
             // 
             this.exitWebBrowserToolStripMenuItem.Name = "exitWebBrowserToolStripMenuItem";
-            this.exitWebBrowserToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.exitWebBrowserToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.exitWebBrowserToolStripMenuItem.Text = "Exit Web Browser";
             this.exitWebBrowserToolStripMenuItem.Click += new System.EventHandler(this.exitWebBrowserToolStripMenuItem_Click);
             // 
@@ -145,6 +147,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.colorChange2);
             this.tabPage1.Controls.Add(this.colorChange1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -170,6 +173,14 @@
             this.colorChange1.Name = "colorChange1";
             this.colorChange1.Size = new System.Drawing.Size(786, 393);
             this.colorChange1.TabIndex = 0;
+            // 
+            // colorChange2
+            // 
+            this.colorChange2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorChange2.Location = new System.Drawing.Point(3, 3);
+            this.colorChange2.Name = "colorChange2";
+            this.colorChange2.Size = new System.Drawing.Size(786, 393);
+            this.colorChange2.TabIndex = 1;
             // 
             // Number1
             // 
@@ -209,5 +220,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private ColorChange colorChange1;
         private System.Windows.Forms.TabControl tabControl1;
+        private ColorChange colorChange2;
     }
 }
