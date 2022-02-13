@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Number3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number3.Designer.cs">
+      <DependentUpon>Number3.cs</DependentUpon>
+    </Compile>
     <Compile Include="ColorChange.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,6 +64,12 @@
     <Compile Include="Number1.Designer.cs">
       <DependentUpon>Number1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Number2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number2.Designer.cs">
+      <DependentUpon>Number2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ColorChange.resx">
@@ -65,6 +77,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Number1.resx">
       <DependentUpon>Number1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number2.resx">
+      <DependentUpon>Number2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number3.resx">
+      <DependentUpon>Number3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
