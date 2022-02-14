@@ -25,7 +25,7 @@ namespace WebBrowser.UI
 
             foreach (var item in items)
             {
-                listBox2.Items.Add(string.Format("{0} - {1} - {2}", item.Title, item.URL));
+                listBox2.Items.Add(string.Format("{0} - {1}", item.Title, item.URL));
             }
         }
     }

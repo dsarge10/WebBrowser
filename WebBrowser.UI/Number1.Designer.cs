@@ -41,11 +41,12 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.colorChange5 = new WebBrowser.UI.ColorChange();
+            this.colorChange4 = new WebBrowser.UI.ColorChange();
             this.colorChange3 = new WebBrowser.UI.ColorChange();
             this.colorChange2 = new WebBrowser.UI.ColorChange();
             this.colorChange1 = new WebBrowser.UI.ColorChange();
-            this.colorChange4 = new WebBrowser.UI.ColorChange();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -125,12 +126,14 @@
             this.manageHistoryToolStripMenuItem.Name = "manageHistoryToolStripMenuItem";
             this.manageHistoryToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.manageHistoryToolStripMenuItem.Text = "Manage History";
+            this.manageHistoryToolStripMenuItem.Click += new System.EventHandler(this.manageHistoryToolStripMenuItem_Click);
             // 
             // manageBookmarksToolStripMenuItem
             // 
             this.manageBookmarksToolStripMenuItem.Name = "manageBookmarksToolStripMenuItem";
             this.manageBookmarksToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.manageBookmarksToolStripMenuItem.Text = "Manage Bookmarks";
+            this.manageBookmarksToolStripMenuItem.Click += new System.EventHandler(this.manageBookmarksToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -149,6 +152,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.colorChange5);
             this.tabPage1.Controls.Add(this.colorChange4);
             this.tabPage1.Controls.Add(this.colorChange3);
             this.tabPage1.Controls.Add(this.colorChange2);
@@ -161,15 +165,22 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabControl1
+            // colorChange5
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(0, 27);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 425);
-            this.tabControl1.TabIndex = 2;
-            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
+            this.colorChange5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorChange5.Location = new System.Drawing.Point(3, 3);
+            this.colorChange5.Name = "colorChange5";
+            this.colorChange5.Size = new System.Drawing.Size(786, 393);
+            this.colorChange5.TabIndex = 4;
+            this.colorChange5.Load += new System.EventHandler(this.colorChange5_Load);
+            // 
+            // colorChange4
+            // 
+            this.colorChange4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorChange4.Location = new System.Drawing.Point(3, 3);
+            this.colorChange4.Name = "colorChange4";
+            this.colorChange4.Size = new System.Drawing.Size(786, 393);
+            this.colorChange4.TabIndex = 3;
             // 
             // colorChange3
             // 
@@ -195,13 +206,15 @@
             this.colorChange1.Size = new System.Drawing.Size(786, 393);
             this.colorChange1.TabIndex = 0;
             // 
-            // colorChange4
+            // tabControl1
             // 
-            this.colorChange4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorChange4.Location = new System.Drawing.Point(3, 3);
-            this.colorChange4.Name = "colorChange4";
-            this.colorChange4.Size = new System.Drawing.Size(786, 393);
-            this.colorChange4.TabIndex = 3;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(0, 27);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(800, 425);
+            this.tabControl1.TabIndex = 2;
+            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
             // Number1
             // 
@@ -244,5 +257,6 @@
         private ColorChange colorChange2;
         private ColorChange colorChange3;
         private ColorChange colorChange4;
+        private ColorChange colorChange5;
     }
 }

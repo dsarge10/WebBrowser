@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WebBrowser.Logic;
 
 
 namespace WebBrowser.UI
@@ -66,6 +67,24 @@ namespace WebBrowser.UI
             //TabPage myTabPage = new TabPage();//Create new tabpage
             //myTabPage.Controls.Add(myUserControl);
             //tabControl1.TabPages.Add(myTabPage);
+        }
+
+        private void manageHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var itemsForm = new Number2();
+            itemsForm.ShowDialog();
+        }
+
+        private void manageBookmarksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var itemsForms = new Number3();
+            itemsForms.ShowDialog();
+        }
+
+        private void colorChange5_Load(object sender, EventArgs e)
+        {
+            var itemsForm = new Number2();
+            itemsForm.ShowDialog();
         }
 
 

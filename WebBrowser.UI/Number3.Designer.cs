@@ -33,10 +33,11 @@
             // 
             // listBox2
             // 
+            this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(24, 22);
+            this.listBox2.Location = new System.Drawing.Point(0, 0);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(407, 251);
+            this.listBox2.Size = new System.Drawing.Size(500, 450);
             this.listBox2.TabIndex = 0;
             // 
             // Number3

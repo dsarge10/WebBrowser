@@ -112,6 +112,7 @@
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(565, 25);
             this.textBoxAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown);
+            this.textBoxAddress.Click += new System.EventHandler(this.textBoxAddress_Click);
             // 
             // buttonGo
             // 
@@ -131,6 +132,7 @@
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton5.Text = "toolStripButton5";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // ColorChange
             // 

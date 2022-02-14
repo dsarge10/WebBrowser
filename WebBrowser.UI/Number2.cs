@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WebBrowser.Logic;
+
 namespace WebBrowser.UI
 {
     public partial class Number2 : Form
@@ -27,6 +28,11 @@ namespace WebBrowser.UI
                 listBox1.Items.Add(string.Format("{0} - {1} - {2}", item.URL, item.Title, item.Date));
             }
             
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
