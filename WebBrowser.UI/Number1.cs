@@ -87,6 +87,11 @@ namespace WebBrowser.UI
             itemsForm.ShowDialog();
         }
 
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
         //private void keyDown(object sender, KeyEventArgs e)

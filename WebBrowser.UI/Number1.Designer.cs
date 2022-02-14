@@ -41,12 +41,8 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.colorChange5 = new WebBrowser.UI.ColorChange();
-            this.colorChange4 = new WebBrowser.UI.ColorChange();
-            this.colorChange3 = new WebBrowser.UI.ColorChange();
-            this.colorChange2 = new WebBrowser.UI.ColorChange();
-            this.colorChange1 = new WebBrowser.UI.ColorChange();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.colorChange4 = new WebBrowser.UI.ColorChange();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -152,11 +148,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.colorChange5);
             this.tabPage1.Controls.Add(this.colorChange4);
-            this.tabPage1.Controls.Add(this.colorChange3);
-            this.tabPage1.Controls.Add(this.colorChange2);
-            this.tabPage1.Controls.Add(this.colorChange1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -164,47 +156,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // colorChange5
-            // 
-            this.colorChange5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorChange5.Location = new System.Drawing.Point(3, 3);
-            this.colorChange5.Name = "colorChange5";
-            this.colorChange5.Size = new System.Drawing.Size(786, 393);
-            this.colorChange5.TabIndex = 4;
-            this.colorChange5.Load += new System.EventHandler(this.colorChange5_Load);
-            // 
-            // colorChange4
-            // 
-            this.colorChange4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorChange4.Location = new System.Drawing.Point(3, 3);
-            this.colorChange4.Name = "colorChange4";
-            this.colorChange4.Size = new System.Drawing.Size(786, 393);
-            this.colorChange4.TabIndex = 3;
-            // 
-            // colorChange3
-            // 
-            this.colorChange3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorChange3.Location = new System.Drawing.Point(3, 3);
-            this.colorChange3.Name = "colorChange3";
-            this.colorChange3.Size = new System.Drawing.Size(786, 393);
-            this.colorChange3.TabIndex = 2;
-            // 
-            // colorChange2
-            // 
-            this.colorChange2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorChange2.Location = new System.Drawing.Point(3, 3);
-            this.colorChange2.Name = "colorChange2";
-            this.colorChange2.Size = new System.Drawing.Size(786, 393);
-            this.colorChange2.TabIndex = 1;
-            // 
-            // colorChange1
-            // 
-            this.colorChange1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorChange1.Location = new System.Drawing.Point(3, 3);
-            this.colorChange1.Name = "colorChange1";
-            this.colorChange1.Size = new System.Drawing.Size(786, 393);
-            this.colorChange1.TabIndex = 0;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabControl1
             // 
@@ -215,6 +167,14 @@
             this.tabControl1.Size = new System.Drawing.Size(800, 425);
             this.tabControl1.TabIndex = 2;
             this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
+            // 
+            // colorChange4
+            // 
+            this.colorChange4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorChange4.Location = new System.Drawing.Point(3, 3);
+            this.colorChange4.Name = "colorChange4";
+            this.colorChange4.Size = new System.Drawing.Size(786, 393);
+            this.colorChange4.TabIndex = 0;
             // 
             // Number1
             // 
@@ -252,11 +212,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.TabPage tabPage1;
-        private ColorChange colorChange1;
         private System.Windows.Forms.TabControl tabControl1;
-        private ColorChange colorChange2;
-        private ColorChange colorChange3;
         private ColorChange colorChange4;
-        private ColorChange colorChange5;
     }
 }
