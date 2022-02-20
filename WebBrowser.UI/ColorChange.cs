@@ -31,31 +31,20 @@ namespace WebBrowser.UI
             if (e.KeyCode == Keys.Enter)
             {
                 webBrowser1.Navigate(textBoxAddress.Text);
+
+                if (started)
+                {
+                    this.buttonGo.Text = "Start";
+                    timer1.Stop();
+                }
+                else
+                {
+                    this.buttonGo.Text = "Stop";
+                    this.progressBar1.Value = 0;
+                    timer1.Start();
+                }
+                started = !started;
             }
-
-            //if (started)
-            //{
-            //    this.buttonGo.Text = "Start";
-            //    timer1.Stop();
-            //}
-            //else
-            //{
-            //    this.buttonGo.Text = "Stop";
-            //    this.progressBar1.Value = 0;
-            //    timer1.Start();
-            //}
-            //started = !started;
-
-            //if (this.progressBar1.Value == 10)
-            //{
-            //    timer1.Stop();
-            //    this.started = false;
-            //    this.buttonGo.Text = "Start";
-            //}
-            //else
-            //{
-            //    this.progressBar1.Value++;
-            //}
 
         }
 
@@ -79,20 +68,7 @@ namespace WebBrowser.UI
                 this.progressBar1.Value = 0;
                 timer1.Start();
             }
-            started = !started;
-
-            //do
-            //{
-
-            //    timer1.Stop();
-            //    this.started = false;
-            //    this.toolStripStatusLabel3.Text = "Done";
-            //    this.progressBar1.Value++;
-            //    this.toolStripStatusLabel3.Text = "Loading";
-
-            //} while (this.progressBar1.Value == 10);
-                
-            
+            started = !started;            
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -180,17 +156,7 @@ namespace WebBrowser.UI
 
         private void toolStripStatusLabel3_Click(object sender, EventArgs e)
         {
-            //if (this.progressBar1.Value == 10)
-            //{
-            //    timer1.Stop();
-            //    this.started = false;
-            //    this.toolStripStatusLabel1.Text = "Done";
-            //}
-            //else
-            //{
-            //    this.progressBar1.Value++;
-            //    this.toolStripStatusLabel1.Text = "Loading";
-            //}
+           
         }
     }
 }
