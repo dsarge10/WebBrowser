@@ -34,5 +34,37 @@ namespace WebBrowser.UI
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //filters out the other items to display only items searched for
+            for (int i = listBox1.Items.Count - 1; i >= 0; i--)
+            {
+                if (listBox1.Items[i].ToString().Contains(textBox1.Text))
+                    listBox1.SetSelected(i, true);
+                else
+                    listBox1.Items.RemoveAt(i);
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            for (int i = listBox1.Items.Count - 1; i >= 0; i--)
+            {
+                listBox1.Items.RemoveAt(i);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var items = HistoryManager.GetItems();
+            listBox1.Items.Clear();
+        }
     }
 }
