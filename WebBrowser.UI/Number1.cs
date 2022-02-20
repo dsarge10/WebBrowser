@@ -92,6 +92,11 @@ namespace WebBrowser.UI
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
 
 
         //private void keyDown(object sender, KeyEventArgs e)
