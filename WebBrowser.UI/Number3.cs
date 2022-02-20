@@ -28,5 +28,31 @@ namespace WebBrowser.UI
                 listBox2.Items.Add(string.Format("{0} - {1}", item.Title, item.URL));
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //filters out the other items to display only items searched for
+            for (int i = listBox2.Items.Count - 1; i >= 0; i--)
+            {
+                if (listBox2.Items[i].ToString().Contains(textBox1.Text))
+                    listBox2.SetSelected(i, true);
+                else
+                    listBox2.Items.RemoveAt(i);
+            }
+        }
+
+        //deletes searched for item
+        private void button2_Click(object sender, EventArgs e)
+        {
+            for (int i = listBox2.Items.Count - 1; i >= 0; i--)
+            {
+                listBox2.Items.RemoveAt(i);
+            }
+        }
     }
 }
