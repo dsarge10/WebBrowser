@@ -92,31 +92,10 @@ namespace WebBrowser.UI
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        //THIS IS INCORRECT
+        private void clearHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            menuStrip1.Items.Clear();
         }
-
-
-
-        //private void keyDown(object sender, KeyEventArgs e)
-        //{
-        ////    if (e.KeyCode == Keys.Enter)
-        ////    {
-        ////        webBrowser1.Navigate(textBoxAddress.Text);
-        ////    }
-        //}
-
-        //private void toolStripTextBox1_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void buttonGo_Click(object sender, EventArgs e)
-        //{
-        //    //webBrowser1.Navigate(textBoxAddress.Text);  
-        //}
-
-
     }
 }

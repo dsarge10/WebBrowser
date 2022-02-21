@@ -18,7 +18,7 @@ namespace WebBrowser.UI
             InitializeComponent();
         }
 
-        private void Number2_Load(object sender, EventArgs e)
+        public void Number2_Load(object sender, EventArgs e)
         {
             var items = HistoryManager.GetItems();
             listBox1.Items.Clear();

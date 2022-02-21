@@ -41,11 +41,12 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.colorChange3 = new WebBrowser.UI.ColorChange();
             this.colorChange2 = new WebBrowser.UI.ColorChange();
             this.colorChange1 = new WebBrowser.UI.ColorChange();
             this.colorChange4 = new WebBrowser.UI.ColorChange();
-            this.colorChange3 = new WebBrowser.UI.ColorChange();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.clearHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -122,15 +123,17 @@
             // 
             // manageHistoryToolStripMenuItem
             // 
+            this.manageHistoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearHistoryToolStripMenuItem});
             this.manageHistoryToolStripMenuItem.Name = "manageHistoryToolStripMenuItem";
-            this.manageHistoryToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.manageHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manageHistoryToolStripMenuItem.Text = "Manage History";
             this.manageHistoryToolStripMenuItem.Click += new System.EventHandler(this.manageHistoryToolStripMenuItem_Click);
             // 
             // manageBookmarksToolStripMenuItem
             // 
             this.manageBookmarksToolStripMenuItem.Name = "manageBookmarksToolStripMenuItem";
-            this.manageBookmarksToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.manageBookmarksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manageBookmarksToolStripMenuItem.Text = "Manage Bookmarks";
             this.manageBookmarksToolStripMenuItem.Click += new System.EventHandler(this.manageBookmarksToolStripMenuItem_Click);
             // 
@@ -145,7 +148,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -164,15 +167,13 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabControl1
+            // colorChange3
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(0, 27);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 425);
-            this.tabControl1.TabIndex = 2;
-            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
+            this.colorChange3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorChange3.Location = new System.Drawing.Point(3, 3);
+            this.colorChange3.Name = "colorChange3";
+            this.colorChange3.Size = new System.Drawing.Size(786, 393);
+            this.colorChange3.TabIndex = 3;
             // 
             // colorChange2
             // 
@@ -198,13 +199,22 @@
             this.colorChange4.Size = new System.Drawing.Size(786, 393);
             this.colorChange4.TabIndex = 0;
             // 
-            // colorChange3
+            // tabControl1
             // 
-            this.colorChange3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorChange3.Location = new System.Drawing.Point(3, 3);
-            this.colorChange3.Name = "colorChange3";
-            this.colorChange3.Size = new System.Drawing.Size(786, 393);
-            this.colorChange3.TabIndex = 3;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(0, 27);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(800, 425);
+            this.tabControl1.TabIndex = 2;
+            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
+            // 
+            // clearHistoryToolStripMenuItem
+            // 
+            this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
+            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearHistoryToolStripMenuItem.Text = "Clear History";
+            this.clearHistoryToolStripMenuItem.Click += new System.EventHandler(this.clearHistoryToolStripMenuItem_Click);
             // 
             // Number1
             // 
@@ -247,5 +257,6 @@
         private ColorChange colorChange1;
         private ColorChange colorChange2;
         private ColorChange colorChange3;
+        private System.Windows.Forms.ToolStripMenuItem clearHistoryToolStripMenuItem;
     }
 }
