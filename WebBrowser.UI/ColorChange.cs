@@ -73,7 +73,13 @@ namespace WebBrowser.UI
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            this.webBrowser1.Document.MouseOver += new HtmlElementEventHandler(this.Browser_Mouse_Moved);
+        }
 
+        private void Browser_Mouse_Moved(object sender, HtmlElementEventArgs e)
+        {
+            string element = webBrowser1.Document.GetElementFromPoint(e.ClientMousePosition).GetAttribute("href");
+            toolStripStatusLabel4.Text = element;
         }
 
         private void tsRefresh_Click(object sender, EventArgs e)
