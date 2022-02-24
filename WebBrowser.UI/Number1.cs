@@ -62,11 +62,8 @@ namespace WebBrowser.UI
 
         private void tabControl1_Click(object sender, EventArgs e)
         {
-            //Number1 myUserControl = new Number1();
-            //myUserControl.Dock = DockStyle.Fill;
-            //TabPage myTabPage = new TabPage();//Create new tabpage
-            //myTabPage.Controls.Add(myUserControl);
-            //tabControl1.TabPages.Add(myTabPage);
+         
+
         }
 
         private void manageHistoryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,5 +94,8 @@ namespace WebBrowser.UI
         {
             menuStrip1.Items.Clear();
         }
+
+        
+
     }
 }

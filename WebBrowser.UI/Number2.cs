@@ -23,11 +23,11 @@ namespace WebBrowser.UI
             var items = HistoryManager.GetItems();
             listBox1.Items.Clear();
 
-           foreach (var item in items)
+            foreach (var item in items)
             {
                 listBox1.Items.Add(string.Format("{0} - {1} - {2}", item.URL, item.Title, item.Date));
             }
-            
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

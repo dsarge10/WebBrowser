@@ -44,6 +44,13 @@ namespace WebBrowser.UI
                     timer1.Start();
                 }
                 started = !started;
+
+                var item = new HistoryItem();
+                item.URL = textBoxAddress.Text;
+                item.Title = textBoxAddress.Text;
+                item.Date = DateTime.Now;
+
+                HistoryManager.AddItem(item);
             }
 
         }
@@ -57,6 +64,7 @@ namespace WebBrowser.UI
         {
             webBrowser1.Navigate(textBoxAddress.Text);
 
+
             if (started)
             {
                 this.buttonGo.Text = "Start";
@@ -68,7 +76,14 @@ namespace WebBrowser.UI
                 this.progressBar1.Value = 0;
                 timer1.Start();
             }
-            started = !started;            
+            started = !started;
+
+            var item = new HistoryItem();
+            item.URL = textBoxAddress.Text;
+            item.Title = textBoxAddress.Text;
+            item.Date = DateTime.Now;
+
+            HistoryManager.AddItem(item);
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -111,7 +126,6 @@ namespace WebBrowser.UI
 
             BookmarkManager.AddItem(item);
 
-            
         }
 
         private void textBoxAddress_Click(object sender, EventArgs e)
