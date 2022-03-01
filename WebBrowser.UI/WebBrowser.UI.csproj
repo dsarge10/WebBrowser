@@ -137,6 +137,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebBrowser.Data\WebBrowser.Data.csproj">
+      <Project>{BDFCD45E-2087-4CD6-8118-DF51CB0FF6F7}</Project>
+      <Name>WebBrowser.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebBrowser.Logic\WebBrowser.Logic.csproj">
       <Project>{7eff3afd-440a-42bc-b633-dbe85a9ebf13}</Project>
       <Name>WebBrowser.Logic</Name>

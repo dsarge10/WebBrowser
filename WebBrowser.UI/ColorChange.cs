@@ -86,9 +86,16 @@ namespace WebBrowser.UI
             HistoryManager.AddItem(item);
         }
 
+        // Updates label at footer with MouseOver.
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             this.webBrowser1.Document.MouseOver += new HtmlElementEventHandler(this.Browser_Mouse_Moved);
+        }
+
+        // Updates the URL in TextBoxAddress upon navigation.
+        private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        {
+            textBoxAddress.Text = webBrowser1.Url.ToString();
         }
 
         private void Browser_Mouse_Moved(object sender, HtmlElementEventArgs e)
@@ -136,8 +143,12 @@ namespace WebBrowser.UI
             item.Date = DateTime.Now;
 
             HistoryManager.AddItem(item);
-
+            
         }
+
+     
+
+
 
         private void toolStripProgressBar1_Click(object sender, EventArgs e)
         {
@@ -177,6 +188,16 @@ namespace WebBrowser.UI
         private void toolStripStatusLabel3_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoHome();
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
