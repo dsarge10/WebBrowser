@@ -46,10 +46,12 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.reviewsPrintDocument = new System.Windows.Forms.PrintPreviewDialog();
             this.reviewsPrintDialog = new System.Windows.Forms.PrintDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.colorChange3 = new WebBrowser.UI.ColorChange();
             this.colorChange2 = new WebBrowser.UI.ColorChange();
             this.colorChange1 = new WebBrowser.UI.ColorChange();
             this.colorChange4 = new WebBrowser.UI.ColorChange();
+            this.historyTableAdapter1 = new WebBrowser.Data.Database1DataSetTableAdapters.HistoryTableAdapter();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -236,6 +238,10 @@
             this.colorChange4.Size = new System.Drawing.Size(786, 393);
             this.colorChange4.TabIndex = 0;
             // 
+            // historyTableAdapter1
+            // 
+            this.historyTableAdapter1.ClearBeforeFill = true;
+            // 
             // Number1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,5 +287,7 @@
         private System.Windows.Forms.ToolStripMenuItem clearHistoryToolStripMenuItem;
         private System.Windows.Forms.PrintPreviewDialog reviewsPrintDocument;
         private System.Windows.Forms.PrintDialog reviewsPrintDialog;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private Data.Database1DataSetTableAdapters.HistoryTableAdapter historyTableAdapter1;
     }
 }

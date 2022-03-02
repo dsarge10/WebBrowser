@@ -158,10 +158,5 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\WebBrowser.Data\WebBrowser.Data.csproj.user">
-      <Link>WebBrowser.Data.csproj.user</Link>
-    </Content>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

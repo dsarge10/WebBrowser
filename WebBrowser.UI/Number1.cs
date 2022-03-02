@@ -140,7 +140,22 @@ namespace WebBrowser.UI
 
         private void savePageAsHTMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
 
+            saveFileDialog1.Filter = "HTML Files|*.html";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                using (System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile())
+                {
+                    using (StreamWriter sw = new StreamWriter(fs, Encoding.Default))
+                    {
+                        //sw.Write(WebBrowser1.DocumentText);
+                    }
+                }
+            }
         }
 
 
